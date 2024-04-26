@@ -1,7 +1,7 @@
 import React from 'react';
 import { Pagination, createTheme } from '@mui/material';
 import { ThemeProvider } from '@emotion/react';
-import config from '../../config';
+import config from '../config';
 const customTheme = createTheme({
   palette: {
     primary:{

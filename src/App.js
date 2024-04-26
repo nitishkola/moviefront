@@ -5,6 +5,7 @@ import SignIn from './Components/SignIn'
 import SignUp from './Components/SignUp'
 import Series from './Components/Series/Series';
 import Movies from './Components/Movies/Movies'
+import config from './config';
 import Form from './Components/Form'
 import Success from './Components/Success'
 import FetchRegistrations from './Components/FetchRegistrations'

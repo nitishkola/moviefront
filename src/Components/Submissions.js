@@ -6,7 +6,7 @@ import { InputGroup, Row } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import {Col} from 'react-bootstrap';
 import PhoneInput from 'react-phone-number-input'
-
+import config from '../config'
 
 import Table from 'react-bootstrap/Table';
 

@@ -3,7 +3,7 @@ import "./Series.css";
 import SingleContent from "../SingleContent/SingleContent";
 import CustomPagination from "../../Pagination/CustomPagination";
 import axios from "axios";
-
+import config from '../config'
 
 const Series = () => {
     const [page, setPage] = useState(1);

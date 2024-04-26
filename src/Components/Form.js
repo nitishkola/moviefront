@@ -8,6 +8,7 @@ import {Col} from 'react-bootstrap';
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
 import Alert from 'react-bootstrap/Alert';
+import config from '../config'
 
 
 function FeedbackForm() {

@@ -16,7 +16,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-
+import config from '../config'
 import axios from 'axios';
 import {useNavigate} from 'react-router-dom';
 import { useFormik } from 'formik';
@@ -59,7 +59,7 @@ export default function SignUp() {
     validationSchema: validationSchema,
     onSubmit: (values) => {
       console.log(values);
-      axios.post('http://localhost:8080/register', values)
+      axios.post(`{config.url}/register`, values)
         .then((res) => {
           console.log(res.data);
           setRole(values.role);

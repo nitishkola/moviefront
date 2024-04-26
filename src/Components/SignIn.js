@@ -23,7 +23,7 @@ function SignIn() {
     let username =document.getElementById("username").value;
     let password=document.getElementById("password").value;
     
-    axios.post('http://localhost:8080/login', { username, password })
+    axios.post(`${config.url}/login`, { username, password })
       .then(response => {
         // Handle successful login response
         alert(response.data);

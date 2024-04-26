@@ -3,7 +3,7 @@ import { AppBar, Tab, Tabs, Toolbar, Typography,  } from '@mui/material'
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import {NavLink} from 'react-router-dom';
 import MovieIcon from '@mui/icons-material/Movie';
-
+import config from '../config'
 
 
 const Header = () => {

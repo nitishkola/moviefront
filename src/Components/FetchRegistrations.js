@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import config from '../config'
 
 const FetchRegistrations = () => {
     const [res, setRes] = useState([]);
     const [formData,setFormData]=useState({name:'',role:'',email:'',password:''})
 
  const fetchData= async()=>{ 
-        axios.get('http://localhost:8080/retrieve', )
+        axios.get(`${config.url}/retrieve`, )
             .then(response => {
                 setRes(response.data);
                 console.log(response.data);
@@ -17,13 +18,13 @@ const FetchRegistrations = () => {
     }, 
     [])
 const updateData=async (id)=>{ 
-const res=await axios.put(`http://localhost:8080/users/${id}`,formData)
+const res=await axios.put(`${config.url}/users/${id}`,formData)
 fetchData()
 console.log(res.data)
     
 }
 const handleDelete = async (id)=>{
-  await axios.delete(`http://localhost:8080/users/${id}`)
+  await axios.delete(`${config.url}/users/${id}`)
   .then((response)=>{
     console.log(response.data)
   })

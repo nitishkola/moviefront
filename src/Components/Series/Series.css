@@ -1,0 +1,12 @@
+.seriesContainer {
+  background-color: #2d313a;
+  padding: 20px;
+}
+
+.tv {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+/* Add any other styling you want for SingleContent */

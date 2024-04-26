@@ -1,0 +1,15 @@
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the movies horizontally */
+  }
+  
+  .movie {
+    max-width: 200px;
+    margin: 10px; 
+  }
+  
+  .movie img {
+    width: 100%;
+  }
+  
